@@ -1,0 +1,23 @@
+public class MazeDemo
+{
+   public static void main(String args[])
+   {
+      char[][] m = {
+         {'*', ' ', '*', '*', '*', '*', '*', '*', '*'}, 
+         {'*', ' ', ' ', ' ', ' ', ' ', '*', ' ', '*'}, 
+         {'*', ' ', '*', '*', '*', '*', '*', ' ', '*'}, 
+         {'*', ' ', '*', ' ', '*', ' ', ' ', ' ', '*'}, 
+         {'*', ' ', '*', ' ', '*', '*', '*', ' ', '*'}, 
+         {'*', ' ', ' ', ' ', '*', ' ', ' ', ' ', '*'}, 
+         {'*', '*', '*', ' ', '*', ' ', '*', '*', '*'}, 
+         {'*', ' ', ' ', '*', ' ', ' ', '*', ' ', '*'}, 
+         {'*', '*', '*', '*', '*', '*', '*', ' ', '*'}};
+         
+      Maze maze = new Maze(m);
+      System.out.println(maze.Escape(4, 3));
+      System.out.println("Expected: true");
+      System.out.println(maze.Escape(5, 5));
+      System.out.println("Expected: false");
+   }
+}
+
